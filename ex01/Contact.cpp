@@ -39,7 +39,7 @@ void    Contact::set_firstname(std::string str)
     this->_fname = str;
 }
 
-void    Contact::set_lname(std::string str)
+void    Contact::set_lastname(std::string str)
 {
     this->_lname = str;
 }

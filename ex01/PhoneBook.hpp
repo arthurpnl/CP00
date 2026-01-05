@@ -5,16 +5,20 @@
 
 class PhoneBook
 {
-    public:
-        PhoneBook();
-        ~PhoneBook();
-        void    add_contact(void);
-        void    search_contact(void);
+private:
+    Contact _contact[8];
+    int _contactCount;
+    
+    std::string _getValidInput(std::string prompt);
+    void _displayHeader(void);
+    void _displayContact(int index);
+    void _displayContactDetails(int index);
 
-    private:
-        Contact _contact[8];
-        int     _contactCount;
-
+public:
+    PhoneBook();
+    ~PhoneBook();
+    void add_contact(void);
+    void search_contact(void);
 };
 
 #endif
